@@ -55,6 +55,10 @@ describe("Utils test suite", () => {
       expect(actual.lowerCase).toBe("my-string");
     });
 
+    test("return right length", () => {
+      expect(actual.length).toBe("my-string".length);
+    });
+
     test("return right extra info", () => {
       expect(actual.extraInfo).toBeDefined();
     });
